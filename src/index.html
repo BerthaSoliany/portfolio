@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bertha's Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+        display: flex;
+        justify-content: center;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        button {
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-large;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
+        .cover button {
+            background-color: black;
+            color: white;
+            border: 0px solid #008CBA;
+            
+        }
+
+        .button1:hover {
+        background-color: white;
+        color: black;
+        }
+        
+        .center {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        }
+
+        main {
+            padding-top: 20px;
+        }
+        .content {
+            display: none;
+            scroll-margin-top: 200px;
+        }
+        .content.active {
+            display: block;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .about-content-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .about-content img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="awal" class="content active">
+    <div class="cover">
+        <div style="height: 559px; background-image:url(/img/sky.jpg);background-size:cover">
+            <span style="position: absolute; top: 25%; left: 37%; font-size:70px">Hello there!</span>
+            <span style="position: absolute; top: 39%; left: 33%; font-size:40px">Ready to get to know me?</span>
+            <button class="button1" style="position: absolute; top: 50%; left: 44%;" href="#home" onclick="showContent('home')" type="button">Click Here!</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <main>
+    <div id="home" class="content">
+        <div style="height: 559px; background-image:url(/img/clouds.jpg);background-size:cover">
+        </div>
+        <div class="topnav">
+            <a href="#home" onclick="showContent('home')">Home</a>
+            <a href="#experience" onclick="showContent('experience')">Experience</a>
+            <a href="#interest" onclick="showContent('interest')">Interest</a>
+            <a href="#contact" onclick="showContent('contact')">Contact</a>
+        </div>
+
+        <h2 style="position: absolute; left: 43%; top: 7%; font-size: 50px;">About me!</h2>
+        <div class="about-content" style="position: absolute; top: 30%; left: 5%; margin-right: 40px;">
+            <img src="/img/myphoto.png" width="200" height="200">
+            <p style="font-size: large;">Halo! Perkenalkan aku Bertha Soliany Frandi yang sekarang merupakan mahasiswa di Institut Teknologi Bandung jurusan Teknik Informatika 2023. Aku mendapatkan NIM 19623107 untuk masa TPB dan 13523026 untuk NIM jurusan. Alasan aku memilih Teknik Informatika karena tertarik dengan pembuatan game. Yaps, untuk saat ini aku mau menjadi Game Developer! Pengalamanku dalam dunia pengembangan video game baru dimulai saat kuliah. Oleh karena itu, aku mencoba untuk konsisten dalam mencapainya! </p>
+        </div>
+    </div> 
+
+    <div id="experience" class="content">
+        <div style="height: 1400px; background-image:url(/img/clouds.jpg);background-size:cover">
+        </div>
+        <div class="topnav">
+            <a href="#home" onclick="showContent('home')">Home</a>
+            <a href="#experience" onclick="showContent('experience')">Experience</a>
+            <a href="#interest" onclick="showContent('interest')">Interest</a>
+            <a href="#contact" onclick="showContent('contact')">Contact</a>
+        </div>
+        <h2 style="position: absolute; left: 41%; top: 7%; font-size: 50px;">Committee!</h2>
+        <div style="position: absolute; left: 32%; top: 30%;">
+        <div class="about-content-2">
+            <img src="/img/itbx.jpg" width="200" height="200">
+            <p>Panitia ITBShowcase divisi Concert-Performance di OSKM ITB 2024.</p>
+            <img src="/img/impact.jpg" width="200" height="200">
+            <p>Panitia acara IMPACT 4.0 yang diadakan oleh STEI-K 2023.</p>
+        </div>
+        </div>
+
+        <h2 style="position: absolute; left: 44%; top: 120%; font-size: 50px;">Project!</h2>
+        <div style="position: absolute; left: 5%; top: 140%; margin-right: 5%;">
+        <div class="about-content">
+            <img src="/img/prd.jpg" width="200" height="250">
+            <img src="/img/prd1.jpg" width="200" height="150">
+            <p>Projek PRD pada semester 1, kelompokku membuat dispenser oatmeal otomatis dengan tujuan menggantikan beras menjadi oatmeal.</p>
+        </div>
+        <div class="about-content">
+            <img src="/img/help1.png" width="200" height="200">
+            <img src="/img/help2.png" width="200" height="200">
+            <p>Menjadi salah satu panitia acara TEChampions, sebuah program pencerdasan lomba bisnis di bawah naungan TEC ITB. Untuk informasi selengkapnya dapat dilihat di Instagram @glorybootcamp</p>
+        </div>
+        <div class="about-content">
+            <img src="/img/Mr. Kil's-Adventure.png" width="200" height="200">
+            <img src="/img/timun-mas.png" width="200" height="200">
+            <p>Menjadi Writer di UKM GIM ITB. Salah satu hasil dalam role writer adalah Mr. Kil's Adventure yang merupakan game hasil kerja kelompok GIM Apprentinceship dengan aku sebagai Writer. Game 2D Platformer ini merupakan game yang masih dalam tahap pengembangan. Hasil lainnya adalah short story yang dapat diakses melalui link berikut https://drive.google.com/drive/folders/1sDi9Ub3MG1NlQE0idK3az2kabNTTIU8f?usp=sharing.</p>
+        </div>
+        <div class="about-content">
+            <img src="/img/steiklinik.png" width="200" height="200">
+            <img src="/img/milestone.jpg" width="200" height="200">
+            <p>Pengalaman pertama menjadi Frontend! Mendapatkan pengalaman mengerjakan website bersama dengan kelompok. Menghasilkan STEI-KLINIK!</p>
+        </div>
+        </div>
+    </div>
+
+    <div id="interest" class="content">
+        <div style="height: 1200px; background-image:url(/img/clouds.jpg);background-size:cover">
+        </div>
+        <div class="topnav">
+            <a href="#home" onclick="showContent('home')">Home</a>
+            <a href="#experience" onclick="showContent('experience')">Experience</a>
+            <a href="#interest" onclick="showContent('interest')">Interest</a>
+            <a href="#contact" onclick="showContent('contact')">Contact</a>
+        </div>
+        <h2 style="position: absolute; left: 30%; top: 7%; font-size: 50px;">My Interests and Talents!</h2>
+        <div style="position: absolute; left: 37%; top: 30%;">
+        <div class="about-content-2">
+            <img src="/img/obeyme.png" width="350" height="200">
+            <p>Otome Games (Obey Me!, Love and Deepscape, etc)</p>
+            <img src="/img/Honkai-Star-Rail.png" width="200" height="200">
+            <p>Turn-based Games (HSR, Pokemon, Persona 5, etc)</p>
+            <img src="/img/gamedev.png" width="200" height="150">
+            <p>Game Development</p>
+            <img src="/img/comic.jpeg" width="200" height="200">
+            <p>Comics, such as manhwa and manga, and poet</p>
+        </div>
+        </div>
+    </div>
+
+    <div id="contact" class="content">
+        <div style="height: 559px; background-image:url(/img/clouds.jpg);background-size:cover">
+        </div>
+        <div class="topnav">
+            <a href="#home" onclick="showContent('home')">Home</a>
+            <a href="#experience" onclick="showContent('experience')">Experience</a>
+            <a href="#interest" onclick="showContent('interest')">Interest</a>
+            <a href="#contact" onclick="showContent('contact')">Contact</a>
+        </div>
+        <h2 style="position: absolute; left: 40%; top: 7%; font-size: 50px;">My Contacts!</h2>
+        <div style="position: absolute; left: 35%; top: 30%;">
+        <div class="about-content-2">
+            <img src="/img/instagram.jpg" width="90" height="50">
+            <p>@bertha.sf_2</p>
+            <img src="/img/gmail.png" width="50" height="50">
+            <p>bertha.soliany@gmail.com</p>
+            <img src="/img/linkedin.png" width="50" height="50">
+            <p>https://www.linkedin.com/in/bertha-frandi-69b045298/</p>
+        </div>
+        </div>
+    </div>
+    </main>
+</body> 
+
+
+<script>
+    function showContent(sectionId) {
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(content => content.classList.remove('active'));
+
+        const activeSection = document.getElementById(sectionId);
+        activeSection.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
